@@ -24,7 +24,7 @@ function App() {
           <About title="About" description={aboutDescription} />
           <TechStackBody title="Tech Stack" technologies={technologies} />
           <TechStackBody title="Learning" technologies={learning} />
-          <Contact title="Contact" description="Some Description" />
+          <Contact title="Contact" />
         </div>
         <div className="right-column">
           <ExperiencesBody title="Experiences" />

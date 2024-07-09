@@ -1,0 +1,47 @@
+.nav-container {
+  color: #ffffff;
+  width: 100vw;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  padding: 8px;
+  font-family: "Poppins";
+  background-image: url("../src/assets/background-city.jpg");
+  background-size: cover;
+  background-repeat: repeat; /* Prevents the image from repeating */
+  z-index: 100;
+  box-shadow: 0px 2px 3px rgb(128, 18, 188); /* Box shadow properties */
+
+  .nav-brand-name {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+  .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    .nav-button {
+      font-size: 24px;
+
+      &:hover {
+        color: #747bff;
+      }
+    }
+    .language-div {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-right: 80px;
+      .nav-chevron {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

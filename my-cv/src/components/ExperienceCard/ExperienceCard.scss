@@ -1,0 +1,23 @@
+.experience-card-container {
+  background: linear-gradient(to bottom right, #62028b, #c809ee);
+  border-radius: 12px;
+  padding: 0px 20px;
+
+  .card-title {
+    color: #62f897;
+    text-shadow: 0 5px 15px rgba(7, 240, 62, 0.3),
+      0 5px 15px rgba(7, 240, 62, 0.3), 0 5px 15px rgba(7, 240, 62, 0.3);
+    font-size: 20px;
+  }
+
+  .card-date {
+    font-size: 10px;
+    margin-left: 10px;
+    color: #ffdefe;
+  }
+
+  .card-description {
+    font-size: 16px;
+    color: #ffdefe;
+  }
+}

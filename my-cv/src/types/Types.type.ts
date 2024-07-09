@@ -1,13 +1,20 @@
-import { ExperienceClass } from "../enums/ExperienceClass.enum";
-
 export type ExperienceT = {
   title: string;
-  description: string;
   date: string;
+  description: string;
 };
 
-export type ExperienceBoxT = {
+export type ProjectT = {
   title: string;
-  experiences: ExperienceT[];
-  class: ExperienceClass;
+  description: string;
+  image: string;
+};
+
+export type TechnologyT = {
+  name: string;
+  icon: string;
+};
+
+export type LeftBoxT = {
+  technologies: TechnologyT[];
 };

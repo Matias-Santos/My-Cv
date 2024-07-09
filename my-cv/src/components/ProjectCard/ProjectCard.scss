@@ -1,0 +1,13 @@
+.project-item {
+  background: linear-gradient(to bottom left, #f1b317, #f1891e);
+  border-radius: 12px;
+  padding: 20px;
+  color: #2f4f4f;
+
+  .project-image {
+    display: flex;
+    background-color: red;
+    justify-content: flex-end;
+    margin-right: 0px;
+  }
+}

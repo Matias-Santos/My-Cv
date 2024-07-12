@@ -1,0 +1,18 @@
+.copied-section {
+  width: 40px;
+  height: 30px;
+  position: relative;
+
+  border-color: #a143f5;
+  background-color: #fcffe7;
+  opacity: 1;
+  transition: opacity 2s ease-out;
+
+  .copied-section.hidden {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+  }
+}

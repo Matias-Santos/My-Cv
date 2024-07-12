@@ -1,0 +1,13 @@
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  margin: 45px 10px 0px 10px;
+  gap: 10px;
+  .projects-grid {
+    display: grid;
+    width: 210px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}

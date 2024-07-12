@@ -1,10 +1,11 @@
+import Button from "../Button/Button";
 import "./About.scss";
 function About({ title, description }: { title: string; description: string }) {
   return (
-    <div className="about-container">
-      <h2>{title}</h2>
+    <section id="About" className="about-container">
+      <Button title={title} />
       <p className="description">{description}</p>
-    </div>
+    </section>
   );
 }
 

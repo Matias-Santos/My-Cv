@@ -17,6 +17,7 @@ import reactIcon from "../assets/react-icon.svg";
 import swiftIcon from "../assets/swift-icon.png";
 import tailwindIcon from "../assets/tailwind-icon.svg";
 import typescriptIcon from "../assets/typescript-icon.svg";
+import sassIcon from "../assets/sass.png";
 
 export const contactInfo = {
   city: "Tandil, Bs As, Argentina",
@@ -52,23 +53,26 @@ which allowed us to develop code more efficiently.`,
 
 export const projects: ProjectT[] = [
   {
+    title: "Knowtes",
+    description:
+      "Obsidian AI for generating notes and recommendations based on you Vault",
+    image: gmailIcon,
+  },
+  {
+    title: "URL Shorter",
+    description:
+      "URL shorter project using a combination of React, SCSS and Go",
+    image: gmailIcon,
+  },
+  {
     title: "3d Printing e-commerce",
-    description: "Some Description",
-    image: gmailIcon,
-  },
-  {
-    title: "URL Shorter Service",
-    description: "Some Description",
-    image: gmailIcon,
-  },
-  {
-    title: "Extension For VSCode",
-    description: "Some Description",
+    description: "Check my original 3d models and buy them online",
     image: gmailIcon,
   },
   {
     title: "Design System",
-    description: "Some Description",
+    description:
+      "Discover how this web SPA was made utilizing my own Custom Components library",
     image: gmailIcon,
   },
 ];
@@ -82,22 +86,23 @@ innovative and impactful applications.`;
 export const technologies: TechnologyT[] = [
   { name: "React", icon: reactIcon },
   { name: "JavaScript", icon: jsIcon },
+  { name: "TypeScript", icon: typescriptIcon },
+  { name: "SASS", icon: sassIcon },
   { name: "HTML", icon: htmlIcon },
-  { name: "CSS", icon: cssIcon },
-  { name: "Swift", icon: swiftIcon },
-  { name: "Java", icon: javaIcon },
-  { name: "MySQL", icon: mysqlIcon },
   { name: "PostgreSQL", icon: postgresqlIcon },
-  { name: "Git", icon: gitIcon },
+  { name: "Swift", icon: swiftIcon },
   { name: "NPM", icon: npmIcon },
+  { name: "Git", icon: gitIcon },
+  { name: "CSS", icon: cssIcon },
 ];
 
 export const learning: TechnologyT[] = [
-  { name: "TypeScript", icon: typescriptIcon },
-  { name: "Tailwind", icon: tailwindIcon },
   { name: "Next.js", icon: nextjsIcon },
-  { name: "Docker", icon: dockerIcon },
   { name: "Python", icon: pythonIcon },
+  { name: "Tailwind", icon: tailwindIcon },
+  { name: "Docker", icon: dockerIcon },
+  { name: "MySQL", icon: mysqlIcon },
+  { name: "Java", icon: javaIcon },
 ];
 
 export const contact: TechnologyT[] = [

@@ -357,42 +357,12 @@ template {
    Base styles: opinionated defaults
    ========================================================================== */
 .main-container {
-  font-family: "Poppins", sans-serif;
+  font-family: "Consolas";
+  color: #a143f5;
+  background-color: #fcffe7;
+
+  width: 320px;
+  font-size: 8px;
   display: flex;
   flex-direction: column;
-  background-image: url("../src/assets/background-city.jpg");
-  background-size: cover;
-  height: 3411px;
-  width: 100vw;
-  z-index: -100;
-
-  .profile-pic {
-    width: 324px;
-    position: absolute;
-    margin-top: 124px;
-    margin-left: 13.5%;
-  }
-
-  .body-container {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    border-radius: 20px;
-    background: linear-gradient(to bottom right, #5207c1, #00d1ad);
-    z-index: 0;
-
-    .left-column {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      width: 25%;
-    }
-    .right-column {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      width: 65%;
-    }
-  }
 }

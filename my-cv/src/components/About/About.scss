@@ -1,9 +1,15 @@
 .about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 45px 10px 0px 10px;
+
   .description {
-    color: #88f52b;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 20px;
+    background: linear-gradient(#ff8006, #fb9f3d);
+    border-radius: 4px;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 2px 2px 4px #ff0000;
+    margin-top: 0px;
   }
 }

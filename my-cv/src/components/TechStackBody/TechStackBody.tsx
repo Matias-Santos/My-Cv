@@ -1,4 +1,5 @@
 import { TechnologyT } from "../../types/Types.type";
+import Button from "../Button/Button";
 import "./TechStackBody..scss";
 
 function TechStackBody({
@@ -9,16 +10,14 @@ function TechStackBody({
   technologies: TechnologyT[];
 }) {
   return (
-    <div>
-      <h2>{title}</h2>
+    <section id="TechStack" className="tech-container">
+      <Button title={title} />
       <div className="tech-grid">
         {technologies.map(({ name, icon }) => (
-          <div className="tech-item" key={name}>
-            <img src={icon} alt={`${name} icon`} className="tech-icon" />
-          </div>
+          <img src={icon} alt={`${name} icon`} className="tech-icon" />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -360,9 +360,23 @@ template {
   font-family: "Consolas";
   color: #a143f5;
   background-color: #fcffe7;
-
-  width: 320px;
-  font-size: 8px;
   display: flex;
   flex-direction: column;
+  font-size: 10px;
+
+  @media (max-width: 576px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 1080px) {
+  }
+
+  /*
+  #BB9896
+  #424349
+  #EAD4CD
+  #76747B
+  #7FB5C0
+  */
 }

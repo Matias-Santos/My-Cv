@@ -10,7 +10,7 @@ function ProjectCard({
   return (
     <div className="project-item" key={title}>
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p className="description">{description}</p>
     </div>
   );
 }

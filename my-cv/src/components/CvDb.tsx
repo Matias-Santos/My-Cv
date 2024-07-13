@@ -55,7 +55,7 @@ export const projects: ProjectT[] = [
   {
     title: "Knowtes",
     description:
-      "Obsidian AI for generating notes and recommendations based on you Vault",
+      "Obsidian AI for generating notes and recommendations based on your Vault",
     image: gmailIcon,
   },
   {

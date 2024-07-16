@@ -357,19 +357,27 @@ template {
    Base styles: opinionated defaults
    ========================================================================== */
 .main-container {
-  font-family: "Consolas";
-  color: #a143f5;
-  background-color: #fcffe7;
+  font-family: "Poppins";
+  background-color: #ead4cd;
   display: flex;
   flex-direction: column;
-  font-size: 10px;
-
-  @media (max-width: 576px) {
-  }
 
   @media (max-width: 768px) {
+    background: linear-gradient(
+      333deg,
+      #ead4cd calc(100% - 150px),
+      #426858 calc(100% - 150px)
+    );
+    font-size: 16px;
   }
-  @media (max-width: 1080px) {
+
+  @media (min-width: 769px) {
+    background: linear-gradient(
+      333deg,
+      #ead4cd calc(100% - 150px),
+      #426858 calc(100% - 150px)
+    );
+    font-size: 20px;
   }
 
   /*

@@ -1,3 +1,4 @@
+import React from "react";
 import "./ProjectCard.scss";
 
 function ProjectCard({
@@ -8,9 +9,9 @@ function ProjectCard({
   description: string;
 }) {
   return (
-    <div className="project-item" key={title}>
-      <h3>{title}</h3>
-      <p className="description">{description}</p>
+    <div className="project-card-container">
+      <h3 className="card-title">{title}</h3>
+      <div className="description">{description}</div>
     </div>
   );
 }

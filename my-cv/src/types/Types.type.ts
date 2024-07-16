@@ -8,6 +8,7 @@ export type ProjectT = {
   title: string;
   description: string;
   image: string;
+  position: string;
 };
 
 export type TechnologyT = {

@@ -1,20 +1,23 @@
 .title-container {
-  .title {
+  margin-top: 50px;
+  margin-left: 40px;
+
+  .name {
     font-size: 16px;
-    font-family: "Poppins";
-    margin-top: 50px;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 40%;
-    color: #ff8301;
+    color: #ffffff;
   }
-  .subtitle {
-    font-size: 8px;
-    font-family: "Poppins";
-    display: flex;
-    justify-content: flex-end;
-    text-align: end;
-    margin-right: 30%;
-    color: #ff497f;
+  .title {
+    font-size: 22px;
+    margin-top: 100px;
+    color: #426858;
+  }
+  .first-phrase {
+    font-size: 26px;
+    margin-top: 40px;
+    color: #426858;
+  }
+  .second-phrase {
+    font-size: 28px;
+    color: #426858;
   }
 }

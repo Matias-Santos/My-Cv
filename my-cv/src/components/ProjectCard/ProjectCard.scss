@@ -1,11 +1,40 @@
-.project-item {
-  border-radius: 4px;
-  background: linear-gradient(#b9b9b9, #dadada);
-  box-shadow: 2px 2px 4px #30b4ff;
-  padding: 5px;
+.project-card-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border-radius: 40px;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+
+    .description {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .card-title {
+    padding: 20px;
+    font-size: 24px;
+  }
 
   .description {
-    padding: 0px 10px;
-    margin-bottom: 5px;
+    position: relative;
+    top: -60px;
+    right: -350px;
+    width: 140px; /* Adjust as needed */
+    height: 160px;
+    background-color: #ffffff;
+    border-radius: 0 40px 40px 0;
+    box-shadow: 5 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    padding-left: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    line-height: 25px;
   }
 }

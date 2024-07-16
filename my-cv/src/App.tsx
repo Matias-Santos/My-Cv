@@ -11,20 +11,23 @@ import ProjectsBody from "./components/ProjectsBody/ProjectsBody";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
-    <main className="main-container">
+    <main id="Home" className="main-container">
       <NavBar />
       <Title
         title="Full Stack Developer"
-        subtitle="Creating solutions since 2021 focused in user accesibility "
+        firstPhrase="Creating solutions"
+        secondPhrase="Focused in user accesibility "
       />
-      <div className="body-container">
-        <About title="About" description={aboutDescription} />
-        <ExperiencesBody title="Experience" />
-        <ProjectsBody title="Projects" />
-        <TechStackBody title="Tech Stack" technologies={technologies} />
-        <TechStackBody title="Learning" technologies={learning} />
-        <Footer></Footer>
-      </div>
+      <About title="About" description={aboutDescription} />
+      <TechStackBody
+        technologiesTitle="Tech Stack"
+        technologies={technologies}
+        learningTitle="Learning"
+        learning={learning}
+      />
+      <ExperiencesBody title="Experience" />
+      <ProjectsBody title="Projects" />
+      <Footer></Footer>
     </main>
   );
 }

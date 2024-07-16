@@ -1,20 +1,45 @@
 .menu-section {
   position: fixed;
-  top: 33px;
-  left: 0px;
-  width: 120px;
-  background-color: #fcffe7;
-  z-index: 1000;
-  box-shadow: inset 0 1px 2px #a143f5, 0 1px 2px #a143f5;
-  border-radius: 0 0 4px;
-  .menu-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    list-style-type: none;
-    margin-left: 10px;
-    font-size: 12px;
-    padding: 10px;
-    margin: 0;
+  top: 0px;
+  right: -25%; /* Initially hide the menu offscreen */
+  width: 20%;
+  height: 100%;
+  background-color: #ead4cd; /* Adjust to your preference */
+  z-index: 999; /* Ensure the menu is above other content */
+  transition: right 0.3s ease-in-out; /* Smooth transition */
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-section.open {
+  right: 0; /* Slide in the menu */
+}
+
+.close-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 50px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item {
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: #426858; /* Adjust to your preference */
+
+  &:hover {
+    color: #111; /* Adjust to your preference */
   }
 }

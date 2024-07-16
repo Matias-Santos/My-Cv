@@ -1,12 +1,11 @@
 import ExperienceCard from "../ExperienceCard/ExperienceCard";
 import { experiences } from "../CvDb";
 import "./ExperiencesBody.scss";
-import Button from "../Button/Button";
 
 function ExperiencesBody({ title }: { title: string }) {
   return (
     <section id="Experience" className="experiences-section">
-      <Button title={title} />
+      <h2 className="title">{title}</h2>
       <div className="experiences-container">
         {experiences.map(({ title, date, description }) => (
           <ExperienceCard

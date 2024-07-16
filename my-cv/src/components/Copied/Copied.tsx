@@ -13,11 +13,11 @@ function Copied() {
   }, []);
   return (
     <div>
-      {isVisible && (
+      {isVisible ? (
         <div className="copied-container">
           <p>Copied!</p>
         </div>
-      )}
+      ) : null}
     </div>
   );
 }

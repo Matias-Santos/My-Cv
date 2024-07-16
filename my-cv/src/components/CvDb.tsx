@@ -19,12 +19,33 @@ import tailwindIcon from "../assets/tailwind-icon.svg";
 import typescriptIcon from "../assets/typescript-icon.svg";
 import sassIcon from "../assets/sass.png";
 
-export const contactInfo = {
-  city: "Tandil, Bs As, Argentina",
-  email: "santos.matias.a.97@gmail.com",
-  github: "https://github.com/Matias-Santos",
-  linkedin: "https://www.linkedin.com/in/matias-andrés-santos-97/",
-};
+export const aboutDescription = `As an ongoing Full Stack professional, I have already completed several projects using React, including the use of several other libraries such as Styled
+Components, Tailwind or SASS . I am committed to continuously improving my
+knowledge and skills in React to contribute to large-scale projects. My goal is to
+advance to a senior developer role, where I can lead and direct teams to build
+innovative and impactful applications.`;
+
+export const technologies: TechnologyT[] = [
+  { name: "React", icon: reactIcon },
+  { name: "JavaScript", icon: jsIcon },
+  { name: "TypeScript", icon: typescriptIcon },
+  { name: "SASS", icon: sassIcon },
+  { name: "HTML", icon: htmlIcon },
+  { name: "PostgreSQL", icon: postgresqlIcon },
+  { name: "Swift", icon: swiftIcon },
+  { name: "NPM", icon: npmIcon },
+  { name: "Git", icon: gitIcon },
+  { name: "CSS", icon: cssIcon },
+];
+
+export const learning: TechnologyT[] = [
+  { name: "Next.js", icon: nextjsIcon },
+  { name: "Python", icon: pythonIcon },
+  { name: "Tailwind", icon: tailwindIcon },
+  { name: "Docker", icon: dockerIcon },
+  { name: "MySQL", icon: mysqlIcon },
+  { name: "Java", icon: javaIcon },
+];
 
 export const experiences: ExperienceT[] = [
   {
@@ -57,52 +78,28 @@ export const projects: ProjectT[] = [
     description:
       "Obsidian AI for generating notes and recommendations based on your Vault",
     image: gmailIcon,
+    position: "flex-start",
   },
   {
     title: "URL Shorter",
     description:
       "URL shorter project using a combination of React, SCSS and Go",
     image: gmailIcon,
+    position: "flex-end",
   },
   {
     title: "3d Printing e-commerce",
     description: "Check my original 3d models and buy them online",
     image: gmailIcon,
+    position: "flex-start",
   },
   {
     title: "Design System",
     description:
       "Discover how this web SPA was made utilizing my own Custom Components library",
     image: gmailIcon,
+    position: "flex-end",
   },
-];
-
-export const aboutDescription = `As an ongoing Full Stack professional, I have already completed several projects using React, including the use of several other libraries such as Styled
-Components, Tailwind or SASS . I am committed to continuously improving my
-knowledge and skills in React to contribute to large-scale projects. My goal is to
-advance to a senior developer role, where I can lead and direct teams to build
-innovative and impactful applications.`;
-
-export const technologies: TechnologyT[] = [
-  { name: "React", icon: reactIcon },
-  { name: "JavaScript", icon: jsIcon },
-  { name: "TypeScript", icon: typescriptIcon },
-  { name: "SASS", icon: sassIcon },
-  { name: "HTML", icon: htmlIcon },
-  { name: "PostgreSQL", icon: postgresqlIcon },
-  { name: "Swift", icon: swiftIcon },
-  { name: "NPM", icon: npmIcon },
-  { name: "Git", icon: gitIcon },
-  { name: "CSS", icon: cssIcon },
-];
-
-export const learning: TechnologyT[] = [
-  { name: "Next.js", icon: nextjsIcon },
-  { name: "Python", icon: pythonIcon },
-  { name: "Tailwind", icon: tailwindIcon },
-  { name: "Docker", icon: dockerIcon },
-  { name: "MySQL", icon: mysqlIcon },
-  { name: "Java", icon: javaIcon },
 ];
 
 export const contact: TechnologyT[] = [
@@ -110,3 +107,10 @@ export const contact: TechnologyT[] = [
   { name: "Gmail", icon: gmailIcon },
   { name: "LinkedIn", icon: linkedinIcon },
 ];
+
+export const contactInfo = {
+  city: "Tandil, Bs As, Argentina",
+  email: "santos.matias.a.97@gmail.com",
+  github: "https://github.com/Matias-Santos",
+  linkedin: "https://www.linkedin.com/in/matias-andrés-santos-97/",
+};

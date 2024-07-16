@@ -1,0 +1,7 @@
+services:
+  frontend:
+    # This is where you define your Vite service
+    buildScript: npm run build # Adjust this command based on your Vite project's build command
+    env:
+      # Define environment variables if necessary
+      NODE_ENV: production

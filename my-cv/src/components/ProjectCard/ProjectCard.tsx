@@ -10,7 +10,7 @@ function ProjectCard({
   return (
     <div className="project-card-container">
       <h3 className="card-title">{title}</h3>
-      <div className="description">{description}</div>
+      <p className="description">{description}</p>
     </div>
   );
 }

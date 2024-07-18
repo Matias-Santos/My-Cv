@@ -1,7 +1,7 @@
 export type ExperienceT = {
   title: string;
   date: string;
-  description: string;
+  description: string[];
 };
 
 export type ProjectT = {

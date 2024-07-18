@@ -18,12 +18,17 @@
   position: relative;
   width: 400px;
   height: 300px;
+
   border-radius: 40px;
   background-color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
-  .card-title {
+  @include z-index-stack(
+    0
+  ); // Apply z-index stack to .project-card-container children
+
+  > .card-title {
     padding: 20px;
     font-size: 24px;
   }
@@ -38,41 +43,39 @@
     }
   }
 
-  @include z-index-stack(
-    0
-  ); // Apply z-index stack to .project-card-container children
-
   @media (max-width: 768px) {
+    width: 200px;
     .description {
-      top: -260px; /* Position below the card by default */
-      left: 260px; /* Adjust as needed */
-      width: 140px;
-      height: 160px;
+      position: absolute; /* Ensure absolute positioning */
+      top: -120px;
+      left: 140px;
+      right: -60px;
       background-color: #ffffff;
       border-radius: 40px 40px 40px 0px;
-      box-shadow: 10px -5px 20px rgba(0, 0, 0, 0.3);
-      padding: 40px;
+      box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.3);
+      padding: 20px;
       opacity: 0;
       transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
       line-height: 25px;
+      font-size: 10px;
       @include adjust-description-zindex(999); // Higher z-index on mobile
     }
   }
 
   @media (min-width: 769px) {
     .description {
-      top: 0px; /* Adjust positioning for desktop */
-      right: -220px; /* Adjust as needed */
-      width: 140px;
-      height: 160px;
+      position: absolute; /* Ensure absolute positioning */
+      top: 40px; /* Adjust positioning for desktop */
+      right: -300px;
+      left: 400px;
       background-color: #ffffff;
       border-radius: 0 40px 40px 0;
-      box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3),
+        -15px 10px 0px rgba(0, 0, 0, 0);
       padding: 40px;
       opacity: 0;
       transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
       line-height: 25px;
-      position: absolute; /* Ensure absolute positioning */
       @include adjust-description-zindex(999); // Higher z-index on desktop
     }
   }

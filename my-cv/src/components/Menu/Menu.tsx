@@ -44,6 +44,9 @@ function Menu({
         <li className="menu-item" onClick={() => scrollToSection("Projects")}>
           Projects
         </li>
+        <li className="menu-item" onClick={() => scrollToSection("Contact")}>
+          Contact
+        </li>
       </ul>
     </section>
   );

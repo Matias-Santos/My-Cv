@@ -5,7 +5,7 @@ import "./ProjectsBody.scss";
 function ProjectsBody({ title }: { title: string }) {
   return (
     <section id="Projects" className="projects-section">
-      <h2>{title}</h2>
+      <h2 className="title">{title}</h2>
       <div className="projects-container">
         {projects.map(({ title, description }) => (
           <ProjectCard title={title} description={description} />

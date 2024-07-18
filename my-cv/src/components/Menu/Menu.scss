@@ -1,45 +1,44 @@
 .menu-section {
   position: fixed;
   top: 0px;
-  right: -25%; /* Initially hide the menu offscreen */
-  width: 20%;
+  right: -30%; // Initially hide the menu offscreen
   height: 100%;
-  background-color: #ead4cd; /* Adjust to your preference */
-  z-index: 999; /* Ensure the menu is above other content */
-  transition: right 0.3s ease-in-out; /* Smooth transition */
+  background-color: #ead4cd; // Adjust to your preference
+  z-index: 999; // Ensure the menu is above other content
+  transition: right 0.3s ease-in-out; // Smooth transition
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
-}
 
-.menu-section.open {
-  right: 0; /* Slide in the menu */
-}
+  &.open {
+    right: 0; // Slide in the menu
+  }
 
-.close-menu {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
+  .close-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
 
-.menu-list {
-  list-style-type: none;
-  margin: 50px 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .menu-list {
+    list-style-type: none;
+    margin: 50px 0 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.menu-item {
-  margin: 20px 0;
-  cursor: pointer;
-  font-size: 20px;
-  color: #426858; /* Adjust to your preference */
+    .menu-item {
+      margin: 20px 0;
+      cursor: pointer;
+      font-size: 20px;
+      color: #426858; // Adjust to your preference
 
-  &:hover {
-    color: #111; /* Adjust to your preference */
+      &:hover {
+        color: #111; // Adjust to your preference
+      }
+    }
   }
 }

@@ -10,7 +10,7 @@ function Footer() {
   }
 
   return (
-    <section className="footer-section">
+    <section id="Contact" className="footer-section">
       <div className="contact">
         <h3>Get to know me</h3>
         <div className="icons-container">
